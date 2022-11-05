@@ -112,7 +112,6 @@ func main() {
 				log.Error().Err(err).Msg("Failed to set answer local description")
 			}
 		default:
-
 			log.Debug().Msg("Received candidate")
 
 			var candidate webrtc.ICECandidateInit

@@ -122,6 +122,8 @@ func main() {
 				return
 			}
 		default:
+			log.Debug().Msg("Received candidate")
+
 			var candidate webrtc.ICECandidateInit
 			err = json.Unmarshal(event.Data, &candidate)
 			if err != nil {
