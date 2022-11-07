@@ -5,14 +5,10 @@ import (
 	"encoding/json"
 	"github.com/centrifugal/centrifuge-go"
 	"github.com/pion/webrtc/v3"
+	"github.com/rs/zerolog/log"
 )
-import "github.com/rs/zerolog/log"
 
-type Message struct {
-	Type string `json:"type"`
-}
-
-func main() {
+func Client() {
 
 	webRTCconfig := webrtc.Configuration{
 		ICEServers: []webrtc.ICEServer{

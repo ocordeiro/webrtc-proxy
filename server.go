@@ -8,11 +8,7 @@ import (
 )
 import "github.com/rs/zerolog/log"
 
-type Message struct {
-	Type string `json:"type"`
-}
-
-func main() {
+func Server() {
 
 	webRTCconfig := webrtc.Configuration{
 		ICEServers: []webrtc.ICEServer{
